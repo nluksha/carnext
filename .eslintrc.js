@@ -8,6 +8,7 @@ module.exports = {
     }],
     "consistent-return": 0,
     "linebreak-style": 0,
-    "no-trailing-spaces": 0
+    "no-trailing-spaces": 0,
+    "class-methods-use-this": 0
   }
 };

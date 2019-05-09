@@ -1,0 +1,13 @@
+.content {
+}
+
+.content__title {
+  color: #014a5d;
+  font-family: sans-serif;
+}
+
+.content__text {
+  color: #2d2d2d;
+  font-family: sans-serif;
+  line-height: 1.5;
+}

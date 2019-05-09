@@ -1,0 +1,10 @@
+.header {
+  height: 50px;
+  width: 100%;
+  background-color: #FFFFFF;
+  border-bottom: 2px solid #EEEEEE;
+}
+
+.header__logo {
+  height: 70px;
+}
