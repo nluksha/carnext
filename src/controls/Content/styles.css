@@ -4,10 +4,11 @@
 .content__title {
   color: #014a5d;
   font-family: sans-serif;
+  font-size: 30px;
 }
 
 .content__text {
   color: #2d2d2d;
-  font-family: sans-serif;
   line-height: 1.5;
+  font-size: 16px;
 }

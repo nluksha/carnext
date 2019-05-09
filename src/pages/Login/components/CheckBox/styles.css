@@ -1,0 +1,31 @@
+.checkbox {
+  margin: 20px 0 0 0;
+}
+
+.checkbox__label {
+  font-size: 16px;
+  color: #000000;
+  margin-left: 5px;
+}
+
+.checkbox_error .checkbox__label {
+  color: #ee4f15;
+}
+
+.checkbox__input {
+  border: 1px solid #989a9a;
+  border-radius: 2px;
+  background: #ffffff;
+}
+
+.checkbox_error .checkbox__input {
+  border: 1px solid #ee4f15;
+  background: #fef4f4;
+}
+
+.checkbox__message {
+  display: block;
+  font-size: 16px;
+  color: #ee4f15;
+  margin-top: 5px;
+}
