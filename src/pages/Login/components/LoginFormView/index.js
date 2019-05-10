@@ -7,8 +7,6 @@ import Button from '../Button';
 import './styles.css';
 
 const required = value => (value || typeof value === 'number' ? undefined : 'Required');
-const maxLength = max => value => (value && value.length > max ? `Must be ${max} characters or less` : undefined);
-const maxLength15 = maxLength(15);
 const minLength = min => value => (value && value.length < min ? `Must be ${min} characters or more` : undefined);
 const minLength2 = minLength(2);
 const fixedLength = length => value => (value && value.length !== length ? `Must be ${length} characters` : undefined);
@@ -29,7 +27,7 @@ const LoginFormView = ({ handleSubmit }) => (
         component={FieldComponent}
         label="First name"
         placeholder="Enter first name"
-        validate={[required, maxLength15, minLength2]}
+        validate={[required, minLength2]}
       />
       <Field
         name="surname"
@@ -37,7 +35,7 @@ const LoginFormView = ({ handleSubmit }) => (
         component={FieldComponent}
         label="Surname"
         placeholder="Enter surname"
-        validate={[required, maxLength15, minLength2]}
+        validate={[required, minLength2]}
       />
     </div>
     <Field
