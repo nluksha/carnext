@@ -12,7 +12,7 @@ function AppRouter() {
       <Layout>
         <Switch>
           <Route path="/" exact component={Login} />
-          <Route path="/result/" component={Result} />
+          <Route path="/result" component={Result} />
         </Switch>
       </Layout>
     </Router>
