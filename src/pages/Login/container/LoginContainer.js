@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom';
 
 import LoginView from '../components/LoginView';
 
@@ -8,4 +9,4 @@ class LoginContainer extends Component {
   }
 }
 
-export default LoginContainer;
+export default withRouter(LoginContainer);

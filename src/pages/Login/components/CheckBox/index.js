@@ -2,13 +2,13 @@ import React from 'react';
 
 import './styles.css';
 
-const CheckBox = ({ name, label, value, onChange, message, isError }) => (
-  <div className={`checkbox ${isError ? 'checkbox_error' : ''}`}>
-    <input className="checkbox__input" id={name} type="checkbox" checked={value} onChange={onChange} />
-    <label className="checkbox__label" htmlFor={name}>
+const CheckBox = ({ input, label, type, meta: { touched, error } }) => (
+  <div className={`checkbox ${error && touched ? 'checkbox_error' : ''}`}>
+    <input className="checkbox__input" id={input.name} {...input} type={type} />
+    <label className="checkbox__label" htmlFor={input.name}>
       {label}
     </label>
-    {isError && <span className="checkbox__message">{message}</span>}
+    {error && touched && <span className="checkbox__message">{error}</span>}
   </div>
 );
 

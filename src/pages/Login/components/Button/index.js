@@ -2,8 +2,8 @@ import React from 'react';
 
 import './styles.css';
 
-const Button = ({ text, onClick }) => (
-  <button className="form-button" onClick={onClick}>
+const Button = ({ text, type, onClick }) => (
+  <button className="form-button" type={type} onClick={onClick}>
     {text}
   </button>
 );
