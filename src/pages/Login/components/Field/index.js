@@ -10,7 +10,10 @@ const Field = ({ placeholder, input, label, type, meta: { touched, error } }) =>
       <label className="field__label" htmlFor={input.name}>
         {label}
       </label>
-      <input className="field__input" id={input.name} placeholder={placeholder} {...input} type={type} />
+      <div>
+        <input className="field__input" id={input.name} placeholder={placeholder} {...input} type={type} />
+        <span />
+      </div>
       {isError && <span className="field__message">{error}</span>}
     </div>
   );

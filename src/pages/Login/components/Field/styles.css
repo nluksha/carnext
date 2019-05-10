@@ -3,7 +3,6 @@
 }
 
 .field__label,
-.field__input,
 .field__message {
   display: block;
   font-size: 16px;
@@ -20,6 +19,7 @@
 }
 
 .field__input {
+  font-size: 16px;
   box-sizing: border-box;
   border: 1px solid #989a9a;
   border-radius: 2px;
@@ -28,9 +28,23 @@
   padding: 13px 10px;
 }
 
+
+
 .field_error .field__input {
   border: 1px solid #ee4f15;
   background: #fef4f4;
+}
+
+.field_error input+span:after {
+  content: "!";
+  margin-left: -30px;
+  background: #fcd9d9;;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: #ee4f15;
 }
 
 .field__input::placeholder {
