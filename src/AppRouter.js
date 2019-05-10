@@ -7,7 +7,7 @@ import Layout from './controls/Layout';
 
 function AppRouter() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Header />
       <Layout>
         <Switch>
